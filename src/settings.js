@@ -4,15 +4,15 @@ export const canvas = document.getElementById('canvas');
 export const ctx = canvas?.getContext('2d') || null;
 
 // Board
-export const BOARD_SIZE = 320; 
+export const BOARD_SIZE = 600;
 export const START_BOARD = 0;
 export const END_BOARD = BOARD_SIZE - BOX;
 export const CROSS_WALLS = false;
 
 // Snake
 export const SNAKE_COLOR = '#0B9ABD';
-export const INITIAL_SNAKE_SPEED = 500;
-export const MAX_SNAKE_SPEED = 100;
+export const INITIAL_SNAKE_SPEED = 100;
+export const MAX_SNAKE_SPEED = 500;
 export const INITIAL_SNAKE_SPEED_INCREMENT = 0.25;
 
 // Game
