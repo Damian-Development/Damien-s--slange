@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Snake game with a twist. The snake can eat the food and grow in length. The game is over when the snake hits the wall or itself."
+    />
+    <title>Snake AI game</title>
+    <!-- Google Analytics -->
+    <script async defer src="src/services/google-analytics.js" type="module"></script>
+    <script defer async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    <!-- Firebase -->
+    <script async defer src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script async defer src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+    <!-- End Firebase -->
+    <script src="index.js" defer type="module"></script>
+    <link async defer rel="stylesheet" href="src/styles/global.css" />
+    <link async defer rel="stylesheet" href="src/styles/canvas.css" />
+    <link async defer rel="stylesheet" href="src/styles/header.css" />
+    <link async defer rel="stylesheet" href="src/styles/container.css" />
+    <!-- <link
+      defer
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    /> -->
+  </head>
+  <body>
+    <div id="root">
+      <div id="header" class="p-8 flex justify-between items-center">
+        <h5>Snake AI game</h5>
+        <a title="Snake game - GitHub" href="https://github.com/andresfigueira/snake-game-vanilla-js" target="_blank">
+          <img
+            loading="lazy"
+            alt="GitHub"
+            src="assets/images/github.webp"
+            width="24px"
+            height="24px"
+          >
+          </img>
+        </a>
+      </div>
+      <div class="w-container">
+          <div class="flex flex-row justify-between w-full">
+            <div id="score" class="mb-8"></div>
+            <div class="flex flex-col">
+              <label class="flex items-center" id="active-ai-container"></label>
+              <label class="flex items-center" id="cross-walls-container"></label>
+              <label class="flex items-center" id="immortal-container"></label>
+            </div>
+          </div>
+          <canvas id="canvas" class="mb-8"></canvas>
+          <div id="speed-slider-container" class="flex flex-col items-center justify-center">
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
