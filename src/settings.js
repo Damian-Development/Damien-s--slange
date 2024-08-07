@@ -6,7 +6,7 @@ export const ctx = canvas?.getContext('2d') || null;
 // Board
 export const BOARD_SIZE = 320;
 export const START_BOARD = 0;
-export const END_BOARD = BOARD_SIZE - BOX;
+export const END_BOARD = 32;
 export const CROSS_WALLS = false;
 
 // Snake
